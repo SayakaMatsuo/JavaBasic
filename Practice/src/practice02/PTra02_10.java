@@ -22,5 +22,16 @@ public class PTra02_10 {
 		 * ※ プログラムは何行書いても良いです
 		 */
 
+		//1000円(所持金)　使った金額：（120×２＋200×1）×1.08
+		//答え＝｛1000-(（120×２＋200×1）×1.08)｝
+
+		int sum=coffee*2+snack;
+		double s=1.08*sum;
+		moneyInHand-=s;
+
+
+		System.out.println("所持金"+moneyInHand+"円");
+
+
 	}
 }
