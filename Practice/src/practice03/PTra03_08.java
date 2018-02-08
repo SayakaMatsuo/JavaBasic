@@ -35,6 +35,24 @@ public class PTra03_08 {
 		 *
 		 * ※ プログラムは何行書いても良いです
 		 */
+		switch(num) {
+		case 1:
+			int a=150;
+			System.out.println(money-a+"円");
+			break;
+
+		case 2:
+			int b=160;
+			System.out.println(money-b+"円");
+			break;
+
+		case 3:
+			int c=200;
+			System.out.println(money-c+"円");
+
+		}
+
+
 
 	}
 }
