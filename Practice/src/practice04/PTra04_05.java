@@ -60,7 +60,23 @@ public class PTra04_05 {
 
 
 			}
+			if(myHand==2 && cpuHand==0) {
+				winFlg=true;
+
+				System.out.println("あなたの勝ちです");
+			}else if(myHand==0 && cpuHand==2) {
+
+				winFlg=false;
+			}else if(myHand<cpuHand) {
+				winFlg=true;
+
+				System.out.println("あなたの勝ちです");
+			}else {
+				winFlg=false;
+			}
 
 		}
+
+		System.out.println("じゃんけんをを終了します。");
 	}
 }
