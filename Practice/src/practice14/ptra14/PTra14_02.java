@@ -20,4 +20,10 @@ public class PTra14_02 {
 	 * 		SQL応用
 	 */
 
+	public static void main(String[] args) {
+		DBCourse DBCourse = new DBCourse();
+
+		DBCourse.getCourseName();
+		DBCourse.getCourseUnit();
+	}
 }

@@ -22,5 +22,10 @@ public class PTra14_01 {
 	 * 		継承
 	 * 		高度な継承
 	 */
+	public static void main(String[] args) {
+		JavaCourse JavaCourse = new JavaCourse();
 
+		JavaCourse.getCourseName();
+		JavaCourse.getCourseUnit();
+	}
 }
