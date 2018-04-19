@@ -6,6 +6,9 @@
  */
 package practice13.ptra13;
 
+import practice13.common.Employee;
+
+
 public class PTra13_08 {
 
 	/*
@@ -17,5 +20,15 @@ public class PTra13_08 {
 	 * メソッド
 	 * 		各フィールドのアクセサ
 	 */
+
+	public static void main (String[] args) {
+
+		Employee employee = new Employee();
+		employee.setDapartmentNm("AAA");
+		employee.setDepartmentCnt(10);
+		System.out.println(employee.getDepertmentNm());
+		System.out.println(employee.getDepartmentCnt());
+
+	}
 
 }
