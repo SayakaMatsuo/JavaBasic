@@ -32,7 +32,7 @@ public class PTra10_03 {
 
 
 		// ★ 変数lineに格納されている値を','で区切り、配列にしてください（Stringクラスのメソッドを使用します）
-		String[] linearray=line.split(",",0); //＊できてない
+		String[] linearray=line.split(",",0); 
 
 
 		// ★ 配列にした値を、usの各フィールドに代入してください
