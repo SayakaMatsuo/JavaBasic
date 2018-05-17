@@ -19,8 +19,8 @@ public class PTra13_04 {
 	public static void main(String[] args) {
 
 		// ★ HeroインスタンスとSlimeインスタンスを作成し、それぞれの名前に"勇者", "スライム"を設定してください
-		Hero hero=new Hero(25,10,7);
-		Slime slime=new Slime(10, 5, 2);
+		Hero hero=new Hero();
+		Slime slime=new Slime();
 
 		hero.setName("勇者");
 		slime.setName("スライム");

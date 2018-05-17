@@ -24,9 +24,9 @@ public class PTra13_08 {
 	public static void main (String[] args) {
 
 		Employee employee = new Employee();
-		employee.setDapartmentNm("AAA");
+		employee.setDepartmentNm("AAA");
 		employee.setDepartmentCnt(10);
-		System.out.println(employee.getDepertmentNm());
+		System.out.println(employee.getDepartmentNm());
 		System.out.println(employee.getDepartmentCnt());
 
 	}

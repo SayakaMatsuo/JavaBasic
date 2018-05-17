@@ -48,14 +48,14 @@ public class PTra13_09 {
 		employee[i].setUserNm(NAMEDATA[i]);
 		employee[i].setMail(MAILDATA[i]);
 		employee[i].setPassword (PASSDATA[i]);
-		employee[i].setDapartmentNm(QUATERDATA[0][i]);
+		employee[i].setDepartmentNm(QUATERDATA[0][i]);
 		employee[i].setDepartmentCnt(Integer.parseInt(QUATERDATA[1][i]));
 
 
 		System.out.println(employee[i].getUserNm());
 		System.out.println(employee[i].getMail());
 		System.out.println(employee[i].getPassword());
-		System.out.println(employee[i].getDepertmentNm());
+		System.out.println(employee[i].getDepartmentNm());
 		System.out.println(employee[i].getDepartmentCnt());
 
 		}

@@ -18,7 +18,7 @@ public class PTra13_07 {
 
 		// ★ SuperHeroインスタンスとSlimeインスタンスを作成し、それぞれの名前に"勇者（装備あり）", "スライム"を設定してください
 		SuperHero superHero = new SuperHero(2,10,7);
-		Slime slime = new Slime(30,5,2);
+		Slime slime = new Slime();
 
 		superHero.setName("勇者(装備あり)");
 		slime.setName("スライム");
