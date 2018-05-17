@@ -6,6 +6,8 @@
  */
 package practice13.ptra13;
 
+import practice13.common.SuperHero;
+
 public class PTra13_06 {
 
 	/*
@@ -20,5 +22,12 @@ public class PTra13_06 {
 	 *
 	 * 		equipmentのアクセサ
 	 */
+	public static void main(String[] args) {
 
+		SuperHero superHero = new SuperHero(25,10,7);
+
+
+		System.out.println(superHero.attack());
+
+	}
 }
