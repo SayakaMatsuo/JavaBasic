@@ -11,6 +11,8 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import practice18.entity.Player;
+
 public class PTra18_03 {
 
 	/*
@@ -25,7 +27,7 @@ public class PTra18_03 {
 		 * ★ ArrayListを作成して、Playerインスタンスを格納してください
 		 */
 
-		ArrayList<EntryPlayer> array = new ArrayList<>();
+		ArrayList<Player> array = new ArrayList<>();
 
 
 		 // file/BestElevenCandidate.csvを取り込む
@@ -40,7 +42,7 @@ public class PTra18_03 {
        	    //!一行毎にArrayListに格納、その際にカンマで区切る
 
        		String[] str = line.split(",");
-       		EntryPlayer player = new EntryPlayer();
+       		Player player = new Player();
 
        		/*ポジション*/
        		player.setPosition(str[0]);
@@ -76,7 +78,7 @@ public class PTra18_03 {
 		}
 
 		// ★ 削除後のArrayListの中身を全件出力してください
-		for(EntryPlayer player : array) {
+		for(Player player : array) {
 			System.out.println(player.toString());
 		}
 

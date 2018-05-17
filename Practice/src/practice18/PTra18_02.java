@@ -11,6 +11,8 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import practice18.entity.Player;
+
 public class PTra18_02 {
 
 	/*
@@ -39,7 +41,7 @@ public class PTra18_02 {
 
 
 
-		ArrayList<EntryPlayer> array = new ArrayList<>();
+		ArrayList<Player> array = new ArrayList<>();
 
 
 
@@ -57,7 +59,7 @@ public class PTra18_02 {
         	    //!一行毎にArrayListに格納、その際にカンマで区切る
 
         		String[] str = line.split(",");
-        		EntryPlayer player = new EntryPlayer();
+        		Player player = new Player();
 
         		/*ポジション*/
         		player.setPosition(str[0]);
@@ -82,7 +84,7 @@ public class PTra18_02 {
 
 		// ★ ArrayListに格納されているインスタンス全てのtoStringメソッドを実行し、出力してください
 				// ※ できれば拡張for文を使いましょう
-		for(EntryPlayer player: array) {
+		for(Player player: array) {
 			System.out.println(player.toString());
 			}
 

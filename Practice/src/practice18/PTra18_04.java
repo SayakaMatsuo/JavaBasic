@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
+import practice18.entity.Player;
+
 public class PTra18_04 {
 
 	/*
@@ -26,7 +28,7 @@ public class PTra18_04 {
 		 * ★ ArrayListを作成して、Playerインスタンスを格納してください
 		 */
 
-		ArrayList<EntryPlayer> array = new ArrayList<>();
+		ArrayList<Player> array = new ArrayList<>();
 
 
 		 // file/BestElevenCandidate.csvを取り込む
@@ -41,7 +43,7 @@ public class PTra18_04 {
       	    //!一行毎にArrayListに格納、その際にカンマで区切る
 
       		String[] str = line.split(",");
-      		EntryPlayer player = new EntryPlayer();
+      		Player player = new Player();
 
       		/*ポジション*/
       		player.setPosition(str[0]);
@@ -74,7 +76,7 @@ public class PTra18_04 {
         int MF = 0;
         int FW = 0;
 
-        for(EntryPlayer player:array) {
+        for(Player player:array) {
 
         	if(player.getPosition().equals("GK")) {
 
