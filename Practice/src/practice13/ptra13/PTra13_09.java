@@ -7,6 +7,7 @@
 package practice13.ptra13;
 
 import practice13.common.Employee;
+import practice13.common.Person;
 
 public class PTra13_09 {
 
@@ -38,26 +39,27 @@ public class PTra13_09 {
 		// ★ 定数で定義されている各データを使用して、Employeeインスタンスを３つ作成してください
 
 
-		Employee employee[] = new Employee[3];
+		Employee[] employees = new Employee[NAMEDATA.length];
 
+		for (int i = 0; i < employees.length; i++) {
+			employees[i] = new Employee();
+			employees[i].setUserId(Person.BASE_NO + i);
+			employees[i].setUserNm(NAMEDATA[i]);
+			employees[i].setMail(MAILDATA[i]);
+			employees[i].setPassword(PASSDATA[i]);
+			employees[i].setDepartmentNm(QUATERDATA[0][i]);
+			employees[i].setDepartmentCnt(Integer.parseInt(QUATERDATA[1][i]));
+		}
 
-		for (int i=0;i<=2;i++) {
-
-		employee[i]=new Employee();
-
-		employee[i].setUserNm(NAMEDATA[i]);
-		employee[i].setMail(MAILDATA[i]);
-		employee[i].setPassword (PASSDATA[i]);
-		employee[i].setDepartmentNm(QUATERDATA[0][i]);
-		employee[i].setDepartmentCnt(Integer.parseInt(QUATERDATA[1][i]));
-
-
-		System.out.println(employee[i].getUserNm());
-		System.out.println(employee[i].getMail());
-		System.out.println(employee[i].getPassword());
-		System.out.println(employee[i].getDepartmentNm());
-		System.out.println(employee[i].getDepartmentCnt());
-
+		// 出力用
+		for (Employee emp : employees) {
+			System.out.println("---------------------------------");
+			System.out.println("ID:" + emp.getUserId());
+			System.out.println("名前：" + emp.getUserNm());
+			System.out.println("メールアドレス：" + emp.getMail());
+			System.out.println("パスワード：" + emp.getPassword());
+			System.out.println("部署：" + emp.getDepartmentNm());
+			System.out.println("部署人数：" + emp.getDepartmentCnt());
 		}
 
 

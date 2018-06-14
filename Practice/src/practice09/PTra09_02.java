@@ -6,7 +6,7 @@ package practice09;
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
 
-import java.util.Arrays;
+import practice09.util.Util;
 
 public class PTra09_02 {
 	public static void main(String[] args) {
@@ -14,11 +14,16 @@ public class PTra09_02 {
 
 		// ★ 配列arrayを、Util内のメソッドを用いてランダムに並び替えてください
 		// ※ Utilはインポートしても良いし、完全限定名で記述しても良いです
-		array=practice09.util.Util.shuffleArray(array);
+
+		String[] random = Util.shuffleArray(array);
+		//array=practice09.util.Util.shuffleArray(array);
 
 
 		// ★ ランダムに並び替えた後の配列を前から順に全て表示してください
-		System.out.println(Arrays.asList(array));
+		for(String str : random) {
+			System.out.println(str);
+		}
+		//System.out.println(Arrays.asList(array));
 
 	}
 }

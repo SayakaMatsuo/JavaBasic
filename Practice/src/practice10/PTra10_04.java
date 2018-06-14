@@ -34,29 +34,44 @@ public class PTra10_04 {
 		String line=scanner.next();
 
 			// ★ 変数lineに格納されている値を','で区切り、配列にしてください（Stringクラスのメソッドを使用します）
-		String[] linearray=line.split(",",0);
+		String[] inputArray=line.split(",");
 
 			// ★ 配列にした値を、users[カウント]の各フィールドに代入してください
 			// ★ ユーザIDに該当する値が数値でなかった場合は、エラーでプログラムが止まっても良いです
-		User us=new User();
+
+		users[i] = new User();
+		users[i].userId = Integer.parseInt(inputArray[0]);
+		users[i].userNm = inputArray[1];
+		users[i].mail = inputArray[2];
+		users[i].password = inputArray[3];
+
+		/*User us=new User();
 
 		us.userId=Integer.parseInt(linearray[0]);
 		us.userNm=linearray[1];
 		us.mail=linearray[2];
 		us.password=linearray[3];
 
-		users[i]=us;
+		users[i]=us;*/
 
 		//----------- ループ end
 		}
 
 		// ★ usersに格納されている全てのインスタンスの、フィールドuserId, userNm, mail, passwordを出力してください
-		for(int i = 0;i<users.length;i++) {
+
+		for (User us : users) {
+			System.out.println(us.userId);
+			System.out.println(us.userNm);
+			System.out.println(us.mail);
+			System.out.println(us.password);
+		}
+
+		/*for(int i = 0;i<users.length;i++) {
 			System.out.println(users[i].userId);
 			System.out.println(users[i].userNm);
 			System.out.println(users[i].mail);
 			System.out.println(users[i].password);
 
-		}
+		}*/
 	}
 }

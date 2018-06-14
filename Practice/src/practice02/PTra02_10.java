@@ -25,9 +25,9 @@ public class PTra02_10 {
 		//1000円(所持金)　使った金額：（120×２＋200×1）×1.08
 		//答え＝｛1000-(（120×２＋200×1）×1.08)｝
 
-		int sum=coffee*2+snack;
-		double s=1.08*sum;
-		moneyInHand-=s;
+		int sum = coffee * 2 + snack; //合計
+		double tax = 1.08 * sum; //税込み
+		moneyInHand-=tax;
 
 
 		System.out.println("所持金"+moneyInHand+"円");

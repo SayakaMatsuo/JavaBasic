@@ -21,9 +21,6 @@ public class PTra07_02 {
 
 			array[i]=i+1;
 
-
-
-
 		// ★ 変数arrayに格納されている値を前から順番に全て表示してください
 			System.out.println(array[i]);
 		}

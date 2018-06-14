@@ -30,7 +30,7 @@ public class PTra05_02 {
 		 *  ※##は変数inputの中身
 		 */
 
-		switch(input%2) {
+		switch(input % 2) {
 
 		//2で割り切れる
 		case 0:

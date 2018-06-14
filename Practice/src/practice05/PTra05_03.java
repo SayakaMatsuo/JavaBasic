@@ -26,7 +26,7 @@ public class PTra05_03 {
 		int ocean=0;
 
 		// ★ 変数indexが5未満である間繰り返す条件式を記述してください
-		while (index<5) {
+		while (index < 5) {
 
 			System.out.println((index + 1) + "人目");
 			System.out.println("山、川、海でどこに行きたいか入力してください。");

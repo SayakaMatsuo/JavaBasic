@@ -18,16 +18,28 @@ public class Car {
 	 * 			ガソリンが負の数になった場合（もう進めない）は-1を返します。
 	 */
 
-	int serialNo,gasoline;
+	int serialNo,gasolin;
 	String color;
 
 		int run() {
-			this.gasoline -= 1;
-			if(gasoline >= 0) {
+			//もう減らせない場合
+			if (gasolin == 0) {
+				return -1;
+			}
+			gasolin--;
+
+			Random random = new Random();
+			int distance = random.nextInt(15) + 1;
+			return distance;
+		}
+
+	/*int run() {
+			this.gasolin -= 1;
+			if(gasolin >= 0) {
 			return  new Random().nextInt(15) + 1;
 			} else {
 			return -1;
 			}
-		}
+		}*/
 
 }
